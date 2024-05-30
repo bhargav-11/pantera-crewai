@@ -62,7 +62,7 @@ def handle_query():
     
     if user_query in ['start', 'Start']:
         chat_history.clear()
-        return jsonify({"response": "Hello, this is Pantera Calendly web bot. How can i help you today?"})
+        return
 
     # Format chat history as a string
     chat_history_str = "\n".join(["Human: {}\nAI: {}".format(entry["Human"], entry["AI"]) for entry in chat_history[-4:]])
